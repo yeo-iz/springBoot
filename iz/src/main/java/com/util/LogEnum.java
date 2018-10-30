@@ -1,0 +1,34 @@
+package com.util;
+
+/**
+ * 本地日志枚举
+ *
+ * @author yt
+ * @version 1.0
+ * @date 2018/8/23
+ * @remark
+ */
+public enum LogEnum {
+  BUSSINESS("bussiness"),
+
+  PLATFORM("platform"),
+
+  DB("db"),
+
+  EXCEPTION("exception"),
+  ;
+
+  private String category;
+
+  LogEnum(String category) {
+    this.category = category;
+  }
+
+  public String getCategory() {
+    return category;
+  }
+
+  public void setCategory(String category) {
+    this.category = category;
+  }
+}
